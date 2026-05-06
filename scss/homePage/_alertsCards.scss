@@ -1,0 +1,58 @@
+@use "../partials/variables" as *;
+
+.alerts-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #1F2A37;
+    margin-block-end: 16px;
+
+    i {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.alerts-cards {
+    background: #f3f4f6;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    border-inline-start: 5px solid #585959;
+    padding: 8px 16px;
+
+    &.col-2-alerts {
+        display: flex;
+        align-items: center;
+
+        .img {
+            margin-inline-start: auto;
+        }
+    }
+
+    .title {
+        font-size: 14px;
+        color: #384250;
+        margin-block-end: 8px;
+    }
+
+    .numm {
+        font-size: 16px;
+        color: #161616;
+        font-weight: bold;
+
+        .plus {
+            color: #b42318;
+    direction: ltr;
+    display: inline-block;
+        }
+    }
+
+    &.danger {
+        background-color: #fef3f2;
+        border-inline-start-color: #e4685f;
+    }
+}

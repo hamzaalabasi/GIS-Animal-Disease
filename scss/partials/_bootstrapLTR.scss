@@ -1,0 +1,39 @@
+
+html[dir="ltr"] {
+
+    .ms-auto {
+        margin-left: auto !important;
+        margin-right: 0px !important;
+    }
+
+    .modal-header .btn-close {
+        margin-inline-start: auto;
+        margin-inline-end: 0px;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        float: left;
+        transform: rotate(180deg);
+    }
+
+    @media (min-width: 992px) {
+        .offset-lg-2 {
+            margin-right: auto;
+            margin-left: 16.66666667%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .offset-lg-4 {
+            margin-right: auto;
+            margin-left: 33.33333333%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .offset-md-3 {
+            margin-right: auto;
+            margin-left: 25%;
+        }
+    }
+}

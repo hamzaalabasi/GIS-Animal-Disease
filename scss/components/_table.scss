@@ -1,0 +1,307 @@
+@use "../partials/variables" as *;
+
+.inner, .content {
+
+    table {
+        width: 100% !important;
+        border: 1px solid #D2D6DB;
+
+        tbody {
+            background-color: #fff;
+
+            tr {
+                &:nth-child(even) {
+                    background: #f1f1f1 !important;
+                }
+            }
+
+            th {
+                font-size: 0.75rem;
+                border: 1px solid #D2D6DB;
+                border-top: 0;
+                text-align: center;
+                vertical-align: middle;
+                color: $text-primary-paragraph;
+                height: 48px;
+                padding: 0.5rem 1rem;
+
+                &:first-child {
+                    text-align: start;
+                }
+            }
+
+            td {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 24px;
+                border: 1px solid #D2D6DB;
+                border-top: 0;
+                text-align: center;
+                vertical-align: middle;
+                color: $text-primary-paragraph;
+                height: 48px;
+                padding: 0.5rem 1rem;
+
+                &:first-child {
+                    text-align: start;
+                }
+            }
+
+            a {
+                border-radius: 4px;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                font-weight: 500;
+                background-color: $button-background-primary-default;
+                border-color: $button-background-primary-default;
+                max-width: max-content;
+                color: #fff !important;
+                text-decoration: none;
+                margin: 0.5rem;
+
+                img {
+                    filter: invert(1) brightness(4);
+                    width: 24px;
+                }
+
+                &:hover {
+                    background-color: $button-background-primary-hovered;
+                    color: #fff;
+                }
+
+                &:active {
+                    background-color: $button-background-primary-pressed;
+                    color: #fff;
+                }
+
+                &:focus {
+                    background-color: $button-background-primary-default;
+                    outline: 0;
+                    border: 1px solid #fff !important;
+                    box-shadow: 0 0 0 2px #000;
+                }
+            }
+        }
+
+        caption {
+            text-align: center;
+            color: #fff;
+            font-size: 1.25rem;
+            line-height: 30px;
+            font-weight: 700;
+            height: 65px;
+            padding: 15px;
+            background: $background-primary;
+        }
+    }
+}
+
+.question {
+    overflow-y: auto;
+
+    table {
+        border: 0px solid #D2D6DB;
+
+        tbody {
+            tr {
+                background-color: transparent !important;
+
+                td {
+                    border: 0px !important;
+                    background-color: transparent;
+                    /*padding: 0;*/
+                    padding-inline-end: 8px;
+                }
+
+                &:nth-child(odd) {
+                    background: transparent !important;
+                }
+            }
+        }
+    }
+}
+
+.Grid {
+    width: 100% !important;
+    border: 1px solid #D2D6DB;
+
+    tr.footable-header {
+        &:nth-child(odd) {
+            background: #f1f1f1 !important;
+        }
+
+        th {
+            font-size: 0.75rem;
+            border: 1px solid #D2D6DB;
+            border-top: 0;
+            text-align: center;
+            vertical-align: middle;
+            color: $text-primary-paragraph;
+            height: 48px;
+            padding: 0.5rem 1rem;
+
+            &:first-child {
+                text-align: start;
+            }
+        }
+    }
+
+    tbody {
+        background-color: #fff;
+
+        tr {
+            &:nth-child(even) {
+                background: #f1f1f1 !important;
+            }
+        }
+
+        th {
+            font-size: 0.75rem;
+            border: 1px solid #D2D6DB;
+            border-top: 0;
+            text-align: center;
+            vertical-align: middle;
+            color: $text-primary-paragraph;
+            height: 48px;
+            padding: 0.5rem 1rem;
+
+            &:first-child {
+                text-align: start;
+            }
+        }
+
+        td {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 24px;
+            border: 0px solid #D2D6DB;
+            border-top: 0;
+            border-bottom: 1px solid #D2D6DB;
+            text-align: center;
+            vertical-align: middle;
+            color: $text-primary-paragraph;
+            height: 48px;
+            padding: 0.5rem 1rem;
+
+            &:first-child {
+                text-align: start;
+            }
+        }
+
+        a {
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            font-weight: 500;
+            background-color: $button-background-primary-default;
+            border-color: $button-background-primary-default;
+            max-width: max-content;
+            color: #fff;
+            text-decoration: none;
+
+            img {
+                filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(103%) contrast(103%) !important;
+                width: 15px !important;
+            }
+
+            &:hover {
+                background-color: $button-background-primary-hovered;
+                color: #fff;
+            }
+
+            &:active {
+                background-color: $button-background-primary-pressed;
+                color: #fff;
+            }
+
+            &:focus {
+                background-color: $button-background-primary-default;
+                outline: 0;
+                border: 1px solid #fff !important;
+                box-shadow: 0 0 0 2px #000;
+            }
+        }
+    }
+
+    caption {
+        text-align: center;
+        color: #fff;
+        font-size: 1.25rem;
+        line-height: 30px;
+        font-weight: 700;
+        height: 65px;
+        padding: 15px;
+        background: $background-primary;
+    }
+}
+
+.tableRes {
+    overflow-y: auto;
+}
+
+
+.bg-green {
+    background: #1B8354;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 28px;
+    border-radius: 0.5rem;
+}
+
+.lay-CardList {
+    .tableRes {
+        tr {
+            td {
+                a {
+                    img {
+                        filter: none !important;
+                    }
+                }
+
+                &:first-child {
+                    a {
+                        img {
+                            filter: none;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ms-acal-item {
+        background-color: $background-primary;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        height: auto !important;
+        min-height: 30px;
+    }
+}
+
+.contact-row {
+    .accept-conditions {
+        .form-control {
+            border: none;
+            padding-inline: 0;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            background: transparent;
+        }
+    }
+}

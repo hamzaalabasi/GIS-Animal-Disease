@@ -1,0 +1,15 @@
+//partials
+@use "partials/fonts" as *;
+@use "partials/bootstrapLTR" as *;
+
+//components
+@use "components/buttons" as *;
+@use "components/modal" as *;
+@use "components/input" as *; 
+@use "components/general" as *; 
+
+
+//homePage
+@use "homePage/general" as *;
+@use "homePage/alertsCards" as *;
+

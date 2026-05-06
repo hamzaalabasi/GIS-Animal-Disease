@@ -1,0 +1,94 @@
+@use "../partials/variables" as *;
+
+.swiper-pagination {
+    position: relative;
+    top: 0;
+    margin-block-start: 1.5rem;
+    padding-block: 0.75rem;
+
+    &.small {
+        .swiper-pagination-bullet {
+            width: 8px !important;
+            height: 8px !important;
+        }
+    }
+
+    &.medium {
+        .swiper-pagination-bullet {
+            width: 12px !important;
+            height: 12px !important;
+        }
+    }
+
+    &.larg {
+        .swiper-pagination-bullet {
+            width: 16px !important;
+            height: 16px !important;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        opacity: .4;
+        opacity: 1;
+        background: $background-neutral-200;
+
+        &.swiper-pagination-bullet-active {
+            background: $background-primary;
+            opacity: 1;
+        }
+
+    }
+}
+
+.navigation-swiper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    width: 100%;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: auto;
+        width: 48px;
+        height: 48px;
+        background: rgba(27, 131, 84, 1);
+        border-radius: 50%;
+        position: relative;
+        left: auto;
+        right: auto;
+
+        &::after {
+            font-size: 24px;
+            color: white;
+        }
+
+        &.swiper-button-disabled {
+            background: rgba(229, 231, 235, 1);
+            opacity: 1;
+
+            &::after {
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+
+    .swiper-button-next {
+        margin-inline-start: auto;
+
+        &:after {
+            content: "㭪";
+            font-family: "hgi-stroke-rounded" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+    .swiper-button-prev {
+        &:after {
+            content: "㭹";
+            font-family: "hgi-stroke-rounded" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+}

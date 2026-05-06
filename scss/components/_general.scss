@@ -1,0 +1,142 @@
+@use "../partials/variables" as *;
+
+.padding-container {
+    @media (min-width: 787px) {
+        padding-inline: 32px;
+    }
+}
+
+.gap-row-3 {
+    row-gap: 1rem;
+}
+
+.wrapper-section {
+    padding-block: 81px;
+    position: relative;
+
+    &.bg-primary-50{
+        background-color: $background-primary-50;
+    }
+
+    .title-section {
+        margin-block-end: 56px;
+
+
+        @media (min-width: 992px) {
+            padding-inline: 200px;
+        }
+
+        @media (min-width: 1200px) {
+            padding-inline: 250px;
+        }
+
+        h2 {
+            color: rgba(22, 22, 22, 1);
+            font-weight: 600;
+            position: relative;
+            text-align: center;
+
+
+            @media (min-width: 992px) {
+                font-size: 36px;
+                line-height: 44px;
+            }
+
+            @media (max-width: 991px) {
+                font-size: 26px;
+                line-height: 34px;
+            }
+
+            span {
+                color: rgba(27, 131, 84, 1);
+            }
+        }
+
+        p {
+            margin-top: 32px;
+            font-size: 18px;
+            color: #161616;
+            font-weight: 400;
+            line-height: 28px;
+            margin-block-start: 32px;
+            text-align: center;
+        }
+
+        &.text-start {
+
+            h2,
+            p {
+                text-align: start;
+            }
+        }
+
+        &.color-w {
+            h2 {
+                color: white;
+            }
+
+            p {
+                color: rgb(255 255 255 / 80%);
+            }
+        }
+
+    }
+
+    &.green-gradient {
+        background: #14573A;
+        background: linear-gradient(90deg, rgb(20, 87, 58) 0%, rgb(27, 131, 84) 100%);
+    }
+
+    img.MaskPatt {
+        position: absolute;
+        inset-inline-end: 0;
+        bottom: 0;
+    }
+}
+
+
+.dir-ltr {
+    direction: ltr;
+    text-align: right;
+}
+
+//
+.row-flex-3 {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+        @media (max-width: 786px) {
+            flex: 100%;
+        }
+
+        @media (min-width: 787px) and (max-width: 991px) {
+            flex: 1 1 48%;
+        }
+
+        @media (min-width: 992px) {
+            flex: 1 1 30%;
+        }
+    }
+}
+
+//
+.row-list-number {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding: 0;
+
+    .card {
+        counter-increment: my-awesome-counter;
+    }
+
+    .content {
+        .card-title {
+            &::before {
+                content: counter(my-awesome-counter)"-";
+            }
+        }
+    }
+}

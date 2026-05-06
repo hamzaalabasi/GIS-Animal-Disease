@@ -1,0 +1,10 @@
+@use "../partials/variables" as *;
+
+.progress {
+    height: 22px;
+
+    .progress-bar {
+        background-color: $background-primary-400;
+        height: 22px;
+    }
+}

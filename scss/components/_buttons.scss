@@ -1,0 +1,209 @@
+@use "../partials/variables" as *;
+
+body {
+    .btn {
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        font-weight: 500;
+        text-decoration: none !important;
+
+        i {
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            font-weight: normal !important;
+
+        }
+
+        &.btn-md {
+            font-size: 0.875rem;
+            line-height: 20px;
+            padding: 0.5rem 0.75rem;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &.btn-secondary-solid {
+            background-color: $button-background-neutral-default;
+            max-width: max-content;
+
+            svg {
+                filter: invert(1);
+            }
+
+            &:hover {
+                background-color: $button-background-neutral-pressed;
+            }
+
+            &.no-filter {
+                svg {
+                    filter: none;
+                }
+            }
+        }
+
+        &.btn-secondary-outline {
+            background-color: transparent;
+            max-width: max-content;
+            border-color: $border-neutral-primary;
+            color: $text-default;
+
+            &:hover {
+                background-color: $button-background-neutral-default !important;
+                color: $text-default !important;
+                //svg {
+                //    filter: invert(1);
+                //}
+            }
+        }
+
+        &.white-icon {
+            svg {
+                width: 20px;
+                height: 20px;
+                filter: invert(1);
+            }
+        }
+
+        &.btn-primary {
+            background-color: $button-background-primary-default;
+            border-color: $button-background-primary-default;
+            max-width: max-content;
+            color: white;
+
+            &:hover {
+                background-color: $button-background-primary-hovered;
+            }
+
+            &:active {
+                background-color: $button-background-primary-pressed;
+                border-color: $button-background-primary-pressed;
+            }
+        }
+
+        &.btn-link {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 18px;
+            color: $text-primary;
+
+            &:visited {
+                color: $link-primary-visited;
+                text-decoration: underline !important;
+            }
+
+            &:active {
+                color: $link-primary-pressed;
+                text-decoration: underline !important;
+            }
+
+            &:hover {
+                color: $link-primary-hovered;
+                text-decoration: underline !important;
+            }
+        }
+
+        &.btn-dark {
+            background-color: $button-background-black-default;
+            border-color: $button-background-black-default;
+            max-width: max-content;
+            color: white;
+
+            &:hover {
+                background-color: $button-background-black-hovered;
+            }
+
+            &:active {
+                background-color: $button-background-black-pressed;
+                border-color: $button-background-black-pressed;
+            }
+        }
+
+        &:focus-visible {
+            outline: 0;
+            border: 1px solid #fff !important;
+            box-shadow: 0 0 0 2px #000 !important;
+        }
+    }
+
+    .link {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 18px;
+        color: $text-primary;
+
+        &:hover {
+            color: $link-primary-hovered;
+            text-decoration: underline !important;
+        }
+
+        &:visited {
+            color: $link-primary-visited;
+            text-decoration: underline !important;
+        }
+
+        &:active {
+            color: $link-primary-pressed;
+            text-decoration: underline !important;
+        }
+
+        &:focus-visible {
+            outline: 0;
+            //border: 1px solid #fff !important;
+            box-shadow: 0 0 0 2px #000;
+        }
+    }
+}
+
+.btn-custom-group {
+    display: flex;
+    align-items: center;
+}
+
+html[dir="ltr"] {
+    .btn {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    .btn-externallink {
+
+        svg,
+        img {
+            transform: rotate(90deg);
+        }
+    }
+
+    .no-rotate {
+        svg {
+            transform: none;
+        }
+    }
+}
+
+
+.btn-g-tow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.icon-w-filter {
+    svg {
+        filter: brightness(10);
+        width: 11px !important;
+        height: 11px !important;
+    }
+}

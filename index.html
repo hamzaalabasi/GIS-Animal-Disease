@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GIS</title>
+
+  <link rel="stylesheet" type="text/css" href="./js/bootstrap.rtl.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/hgi-stroke-rounded.css" />
+  <link rel="stylesheet" type="text/css" href="./scss/style.css">
+
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header>ssxs</header>
+  <main>
+    <div class="sidenav-L">
+      <a href="#0" class="btn-icon" id="mine-side">
+        <i class="hgi hgi-stroke hgi-rounded hgi-sidebar-right-01"></i>
+      </a>
+      <span class="separator"></span>
+      <a href="#0" class="btn-icon" id="liveRisks" data-toggle="tooltip" data-placement="right"
+        title="الحالة المباشرة للمخاطر">
+        <i class="hgi hgi-stroke hgi-rounded hgi-internet-antenna-03"></i>
+      </a>
+      <a href="#0" class="btn-icon" id="latestAlerts" data-toggle="tooltip" data-placement="right"
+        title="احدث التنبيهات">
+        <i class="hgi hgi-stroke hgi-rounded hgi-alert-02"></i>
+      </a>
+      <a href="#0" class="btn-icon" id="smartAssistant" data-toggle="tooltip" data-placement="right"
+        title="المساعد الذكي">
+        <i class="hgi hgi-stroke hgi-rounded hgi-robotic"></i>
+      </a>
+    </div>
+    <iframe class="googleMap"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d275684.4364146465!2d39.452748407500415!3d24.471295541193335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbe5197d220d5%3A0x2e54514fea3b08d9!2sMadinah!5e1!3m2!1sen!2ssa!4v1778048997069!5m2!1sen!2ssa"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- mine-side -->
+    <div class="mine-side">
+      <div class="top">
+        <img src="./images/mewa-logo.svg" alt=" mewa logo">
+        <div class="btn-colse">
+          <i class="hgi hgi-stroke hgi-rounded hgi-multiplication-sign"></i>
+        </div>
+      </div>
+      <div class="items-links">
+        <a href="#0" class="btn-icon">
+          <i class="hgi hgi-stroke hgi-rounded hgi-internet-antenna-03"></i>
+          <span>الحالة المباشرة للمخاطر</span>
+        </a>
+        <a href="#0" class="btn-icon">
+          <i class="hgi hgi-stroke hgi-rounded hgi-alert-02"></i>
+          <span>احدث التنبيهات</span>
+        </a>
+        <a href="#0" class="btn-icon">
+          <i class="hgi hgi-stroke hgi-rounded hgi-robotic"></i>
+          <span>المساعد الذكي</span>
+        </a>
+      </div>
+    </div>
+    <!-- End: mine-side -->
+
+    <!-- mine-side -->
+    <div class="liveRisks wrapper-side">
+
+      <div class="top">
+        <div class="title">
+          <i class="hgi hgi-stroke hgi-rounded hgi-internet-antenna-03"></i>
+          <span>الحالة المباشرة للمخاطر</span>
+        </div>
+        <div class="btn-colse">
+          <i class="hgi hgi-stroke hgi-rounded hgi-multiplication-sign"></i>
+        </div>
+      </div>
+
+      <!-- location -->
+      <div class="location">
+        <div class="time">
+          <span>التوقيت الحالي :</span>
+          <span>08:57:36</span>
+        </div>
+        <div class="loc">
+          <i class="hgi hgi-stroke hgi-rounded hgi-location-01"></i>
+          <span>الرياض</span>
+        </div>
+      </div>
+      <!-- End: location -->
+
+      <div class="px-3">
+        <div class="alerts-title">
+          <i class="hgi hgi-stroke hgi-rounded hgi-chart-line-data-02"></i>
+          <span>
+            مؤشرات
+          </span>
+        </div>
+        <div class="alerts-cards danger col-2-alerts">
+          <div>
+            <div class="title">
+              مؤشر الخطر الوطني
+            </div>
+            <div class="numm">
+              <span>72</span>
+              <span class="plus">
+                +4
+                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-03"></i>
+              </span>
+            </div>
+          </div>
+          <div class="img">
+            <img src="./images/chartt.svg" alt="chartt">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End: mine-side -->
+
+    <!-- mine-side -->
+    <div class="latestAlerts wrapper-side">
+      <div class="top">
+        <div class="title">
+          <i class="hgi hgi-stroke hgi-rounded hgi-internet-antenna-03"></i>
+          <span>الحالة المباشرة للمخاطر</span>
+        </div>
+        <div class="btn-colse">
+          <i class="hgi hgi-stroke hgi-rounded hgi-multiplication-sign"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End: mine-side -->
+    <!-- mine-side -->
+    <div class="smartAssistant wrapper-side">
+      <div class="top">
+        <div class="title">
+          <i class="hgi hgi-stroke hgi-rounded hgi-internet-antenna-03"></i>
+          <span>الحالة المباشرة للمخاطر</span>
+        </div>
+        <div class="btn-colse">
+          <i class="hgi hgi-stroke hgi-rounded hgi-multiplication-sign"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End: mine-side -->
+
+
+
+
+  </main>
+
+
+
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/utilitiesJs.js"></script>
+
+</body>
+
+</html>

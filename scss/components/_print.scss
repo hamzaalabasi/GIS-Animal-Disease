@@ -1,0 +1,16 @@
+@media print {
+
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .topBar, .navbar-collapse, .breadcrumb-section, .lastDate, #feedBack, .rating-section, .main-footer, .cookies-banner,
+    .happensNowPuple, .btn-chat-bot, .animated-icon2, .lang-search-md {
+        display: none !important;
+    }
+
+    .navbar{
+        margin-bottom:25px !important;
+    }
+
+}

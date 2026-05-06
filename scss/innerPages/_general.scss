@@ -1,0 +1,217 @@
+@use "../partials/variables" as *;
+
+
+.no-link {
+    pointer-events: none;
+}
+
+.section-div-inner {
+    padding-block-start: 0px;
+}
+
+.section-inner {
+    padding-block-end: 64px;
+
+    h1.title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 30px;
+        margin-block-end: 32px;
+    }
+}
+
+.cover-inner {
+    overflow: hidden;
+    height: 500px;
+    border-radius: 20px;
+    margin-block-end: 32px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.contents-inner p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: $text-default;
+}
+
+//
+.list-inner {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+        padding-block-end: 32px;
+        position: relative;
+        padding-inline-start: 24px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: $text-default;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            inset-inline-start: 0;
+            background-image: url(/branding/images/chick.svg);
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+//
+.list-attachments {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    li {
+        list-style: none;
+        margin-block-end: 16px;
+
+        @media (min-width: 768px) {
+            flex: 45%;
+        }
+
+        @media (max-width: 767px) {
+            flex: 100%;
+        }
+
+        a {
+            border: 1px solid #D2D6DB;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 20px;
+            display: block;
+            color: $text-default;
+            text-decoration: none;
+            position: relative;
+            padding-inline-start: 58px;
+            height: 100%;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 2px;
+                inset-inline-start: 16px;
+                background-image: url(/branding/images/google-doc.svg);
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+                background-color: #F3FCF6;
+                background-position: center;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+//
+.no-data {
+    text-align: center;
+
+    h1 {
+        font-size: 1.875rem;
+        font-weight: 600;
+        line-height: 38px;
+        color: $text-default;
+        margin-block-start: 24px;
+
+        span {
+            color: $text-primary;
+        }
+    }
+}
+
+//
+@media print {
+    .topBar, .navbar-expand-lg .navbar-collapse, .breadcrumb-section .social-icons, .main-footer, .navbar .navbar-toggler, .breadcrumb {
+        display: none;
+    }
+}
+
+
+// app-wrapper
+
+.app-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    &-text {
+        max-width: 60%;
+        padding-inline-end: 4rem;
+    }
+
+    &-links {
+        flex: 1;
+
+
+        ul {
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: 12px;
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+
+    @media (max-width: 990px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+        gap: 8px;
+
+        &-text {
+            max-width: 100%;
+            padding-inline-end: 0;
+        }
+
+        &-links {
+            ul {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.app-screenshots {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    img {
+        /*display: block;
+        flex: 0 1 220px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;*/
+        max-width: 310px;
+    }
+}
+
+
+.section-iframe .container {
+    @media (min-width: 990px) {
+        padding-inline: 20%;
+    }
+}
