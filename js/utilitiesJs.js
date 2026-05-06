@@ -44,6 +44,7 @@ const map = {
 // إغلاق الكل
 function closeAll() {
   panels.forEach(panel => panel.classList.remove("active"));
+   buttons.forEach(btn => btn.classList.remove("active")); // 🔥 إزالة من الأزرار
   document.body.style.overflow = "";
 }
 
@@ -68,6 +69,8 @@ buttons.forEach(btn => {
 
 
     closeAll();
+    // 🔥 إضافة active للزر الحالي
+    this.classList.add("active");
 
     const targetPanel = document.querySelector(map[this.id]);
     if (targetPanel) {
